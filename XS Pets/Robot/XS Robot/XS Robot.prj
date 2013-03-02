@@ -1,0 +1,114 @@
+<Project name="XS Robot" guid="c80df288-4384-4842-939a-f712ce463d26">
+	<Object name="Debug" guid="54fd3d14-caae-4ac9-9f03-dc66d1db9047">
+		<Script name="Debug Growth.lsl" guid="3f14c174-f823-4dd3-b5e6-50eba0f09e04">
+		</Script>
+		<Notecard name="Global constants.txt" guid="3907a220-2070-48de-be96-10e0d1d2b8e1">
+		</Notecard>
+		<Notecard name="READ ME.txt" guid="94d177b0-a2b8-44f4-8f16-9c8d7eafa8fd">
+		</Notecard>
+		<Script name="xs_ager test script.lsl" guid="f231ac97-8b9b-44ed-b56a-789f2f679fa3">
+		</Script>
+		<Script name="xs_debug.lsl" guid="b8c922d3-141f-47b7-b503-373575ccf811">
+		</Script>
+	</Object>
+	<Object name="Eyes" guid="eee1a573-ecda-4ce2-b7c1-446cec48c1ee">
+		<Script name="xs_eye script" guid="5c70a329-389c-4d9f-8c8d-3a058e828de5">
+		</Script>
+		<Script name="xs_sleep script.lsl" guid="72948788-d928-4422-a203-8cceb0db50dd">
+		</Script>
+	</Object>
+	<Object name="Home Flag" guid="8b5c7038-452d-40bb-a38e-be392010fa4e">
+		<Script name="rotate the globe.lsl" guid="d68f0ea9-edb2-45a9-80e9-7ffdc08aa1dd">
+		</Script>
+		<Script name="waving flag.lsl" guid="c0f60406-9477-493c-9b4c-a9e00922886e">
+		</Script>
+		<Script name="xs_home.lsl" guid="31cba2e9-a207-4895-b609-2d615936e57c">
+		</Script>
+	</Object>
+	<Object name="Leprechuan" guid="d24ad261-948d-4252-9d59-6467fa38cd98">
+		<Script name="xs_home_world.lsl" guid="d6676bcd-9906-44ea-baa4-5ecb834b91f5">
+		</Script>
+		<Script name="xs_listener.lsl" guid="fcbd06ac-4ea4-4678-b01b-27dc1b26ae67">
+		</Script>
+		<Script name="xs_movement.lsl" guid="de335565-e04b-451c-81f5-e389acdaad26">
+		</Script>
+	</Object>
+	<Object name="Moonlet plug-on" guid="b4def4cb-6c09-4549-811f-57e8bfbaff38">
+		<Script name="Moonlet Pose Ball.lsl" guid="5260d297-ac69-4dec-87a8-ff2f0e850ac9">
+		</Script>
+		<Notecard name="README.txt" guid="f0ea34c1-ca35-4f21-a073-9d4b3716859c">
+		</Notecard>
+		<Script name="rotate moon.lsl" guid="1e9d3e44-8769-4206-8312-7740a697f6cd">
+		</Script>
+		<Script name="walking.lsl" guid="200f2d53-b423-49e8-9df6-907b19bb6f81">
+		</Script>
+		<Script name="xs movement plug-in for robot sphere walk" guid="35e5e940-1cb6-4d9d-a1c2-6c51b323c528">
+		</Script>
+		<Script name="xs_home" guid="95b63ac0-a764-4d77-9fba-8ec3ac745ef1">
+		</Script>
+		<Script name="xs_radius.lsl" guid="01af28da-e304-4c37-a946-32505ce0d89a">
+		</Script>
+	</Object>
+	<Object name="Mr Fusion" guid="258afba7-0361-4019-9155-f8fb10d70a97" active="true">
+		<Script name="xs_foodbowl.lsl" guid="757b9c71-c891-432d-a3e3-794e7b9aeef4">
+		</Script>
+		<Script name="xs_foodbowl_anim.lsl" guid="8183504a-8f07-40dc-8858-bfc53a2a8323">
+		</Script>
+	</Object>
+	<Object name="Nut and Bolt Egg" guid="fdfb89e6-e313-4c34-8745-91bd9fb73f53">
+		<Object name="Nut and Bolt" guid="95f6d27a-e436-428d-b860-68cc35a93c61">
+		</Object>
+		<Object name="Troubot" guid="2f2e6783-9d3e-48fb-b910-a0c778ce1f25">
+		</Object>
+		<Script name="xs_egg.lsl" guid="92835c07-c310-4d72-9ffe-0a17f39039f4">
+		</Script>
+	</Object>
+	<Object name="Nut and Bolt Toolbox" guid="4bee461e-2216-45b3-89af-32ed3b9cc971">
+		<Script name="xs_eggcup.lsl" guid="8bf72019-4048-4d25-bf54-55b6fc55c08a">
+		</Script>
+	</Object>
+	<Object name="Robot Transport UFO" guid="f52aeb7c-96b3-4260-9e2c-ef0bef47f506">
+		<Object name="Nut and Bolt" guid="1e80a5ea-0752-4519-a621-11cdd1b8791c">
+		</Object>
+		<Script name="Particle effects.lsl" guid="15eaefee-f0b8-4a00-b93c-f5cf8105faf6">
+		</Script>
+		<Script name="rotate the teleport.lsl" guid="bce0bc54-5fd7-4192-9631-a304b558b214">
+		</Script>
+		<Object name="Troubot" guid="a2d24852-a494-4f86-886f-d86edb66b794">
+		</Object>
+		<Script name="xs_cryocrate.lsl" guid="cd96a0a5-9a2e-48be-8be9-9e5017b798f5">
+		</Script>
+	</Object>
+	<Object name="Troubot" guid="c6ba70f2-3dc7-43e9-b90a-cb9f2312570e">
+		<Script name="Animator.lsl" guid="f6b6e7bb-15eb-464e-bb91-10bb4ee45841">
+		</Script>
+		<Script name="DEBUG prim animator timer.lsl" guid="b43990ba-9b6a-42c2-9a57-9fe4875dc33c">
+		</Script>
+		<Object name="Home Flag" guid="e8d38df3-1a4c-48d0-a044-1020e52c4cda">
+		</Object>
+		<Notecard name="Movement" guid="4c9d64e1-d964-4010-8c8f-4f8a58c693e2">
+		</Notecard>
+		<Object name="Nut and Bolt" guid="75791d5a-7908-41a6-9a51-4a009121437e">
+		</Object>
+		<Sound name="robot_sound" guid="fa6f5499-12e0-4809-be6f-1aa78e197dab">
+		</Sound>
+		<Object name="Troubot" guid="7f3608b2-6e8f-410a-a6a0-30dd934dbfa1">
+		</Object>
+		<Script name="xs_ager.lsl" guid="ec58985b-d0f0-48e3-8e19-54ec8a4ab12a">
+		</Script>
+		<Script name="xs_brain.lsl" guid="72c9b464-97f3-40bc-80b1-c69a739d9ba0">
+		</Script>
+		<Script name="xs_breeding.lsl" guid="9662f464-cd1c-4e6d-8f65-b243559d9485">
+		</Script>
+		<Script name="xs_eater.lsl" guid="51e4673b-65f7-4066-a052-49eb111c0826">
+		</Script>
+		<Script name="xs_infomatic.lsl" guid="fa9bf3b5-431f-4d0b-b7f5-c558935bc747">
+		</Script>
+		<Script name="xs_movement.lsl" guid="2c370d67-c165-4c86-99ff-9a8a31c2e4c6">
+		</Script>
+		<Script name="xs_Sound_Module.lsl" guid="8054b9da-5557-4c06-8d24-fe10475e2312">
+		</Script>
+		<Script name="xs_special.lsl" guid="02f78fdd-c8fe-4445-abb4-dab5f06d0a53">
+		</Script>
+	</Object>
+</Project>

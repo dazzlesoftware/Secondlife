@@ -1,0 +1,299 @@
+|---------------------------------------------------------This Width Is Recommended---------------------------------------------------------------------|
+
+Particle Script Generator v1.1 Help
+======================
+
+1. Introduction
+
+2. Quick Start
+
+3. Full Instructions
+    3.a. Particle Props             - Size, Color, Alpha
+    3.b. Motion Props              - Speed, Push, Rotation, Radius
+    3.c. Quantity                      - Rate, Burst, Life            
+    3.d. System Props             - Follow Source, Follow Velocity, Z Bounce Wind, System Life
+    3.e. Emitter Type               - Explosion, Angle, Angle Cone, Inner & Outer Angles
+    3.f. Controls                       - Fine, Medium, Coarse
+    3.g. Script Type                 - Plain, Preset, llParticleSys, Poofer, Listen on/off, Listen Color, Touch, Everyone
+    3.h. Finilization                  - Help, Reset All, Generate
+    3.i. Stats
+    
+4. Voice Commands
+
+5. Presets - Check this out for presets
+
+6. Problems - Please check this section when you are having trouble, the solution is probably here already
+    6.a. FAQs
+    6.b. Troubleshooting
+
+
+
+1. Introduction
+=========
+The Particle Script Generator was designed for people who want to create particle effects and FULL PERMS SCRIPTS of particles, but do not posses the scripting knowledge needed to do that.
+The process of creating a particle effect with the Particle Script Generator is very simple, you always see the active particle system infront of you, changing in -real time- as you are simply pushing buttons to change color, size, speed of particles and many other parameters. After you've reached the effect you desire, simply click the "Generate!" button, and the Particle Script Generator will give u a fully functional script in chat, you just have to copy/paste it in to a script file!
+
+2. Quick Start
+If you're not patient enough to read the whole full instructions this chapter is for you, itchy fingers!
+As you will rez the Particle Script Generator please be patient and wait for the whole thing to load. When the Particle Script Generator has fully loaded you'll see a red/yellow particle system infront of you(this is your "display") and lots of arrow buttons, and some buttons with words. To make things simpler the buttons are divided in to groups, so it is easier to find a specific option you're looking for, each section marked with label at the top (Particle Propertiess, Quantity, Controls etc). 
+An important thing you should know about, is the tuning roughness. At the bottom center part of the Particle Script Generator control panel there is a section called Controls, there are three buttons there, Fine - makes the tuning very gentle, medium - duh medium tuning, and coarse - will jump a lot on each click on the arrow, the active tuning roughness will be marked green.
+Most of the particle system's parameters are controlled with the arrow buttons, in general arrow up means more, arrow down means less, the tuning buttons control how big is the change when an arrow button is clicked.
+On the upper left side - Particle Properties - all there is to do with particles looks - color, alpha (transperancy) and size. Start section says how particles start, and end means what they turn in to at the end, so they can start black and small, and end white and big. There is no Start Alpha buttons, that because it's not functional in LSL.
+Particle Motion (upper right) deals with speed, where particles are pushed, how they are rotated and whats the emitting radius.
+Quantity - rate means how often particles are emitted (push reset to set to highest rate), burst means how much particles are emitted per burst (which happens every rate times), life means how long will the particle live after it's emitted.
+To generate the script simply push 'Generate!', the Particle Script Generator will say the script in chat, you have to copy/paste that script in to a script file, save it and there ya go, a full perms particles script :D
+
+
+3. Full Instructions
+===========
+
+In this section ALL the buttons will be discussed and explained, if you're not sure what some button is doing, or how to do something, you should look here. Buttons will be discussed by groups, the way they're layed out on the Particle Script Generator.
+
+* All numeric values can also be entered by voice, see chapter 4. Voice Commands for more info
+
+3.a. Particle Properties
+~~~~~~~~~~~~~~~~~~
+This section deals basically with how the particle looks, 3 main values - Size, Color and Alpha (transparency). Start section deals with how the particle looks when it's born, and End section deals with exactly the same parameters when the particle dies. This means particles can start out long, white and fully opaque, and and end short black and fully transparent, they will of course smoothly transform from one state to the other.
+
+Buttons:
+
+Size:
+X - arrows on the X value will change the size on the X axis (width) respectivly
+Y - arrows on the X value will change the size on the Y axis (width) respectivly
+G - arrows on the G value will change both, X & Y keeping the ratio
+
+Color:
+R, G, B - stands for Red, Green and Blue, you can change the presence of each color by using it's arrow buttons
+V - will take all colors up and down accordingly (Making a color brighter or darker)
+White Ellipse - that button will make the particles white (100% of all colors present)
+Black Ellipse - that button will make the particles black (0% of all colors present)
+
+Alpha:
+up & down arrows will change the alpha accordingly
+black circle - will make alpha 100% (fully visible)
+white circle - will make alpha 0% (fully transparent)
+
+*Buttons function exactly the same in both Start and End parameters
+* If you're looking to change the texture on your particles simply drop the texture (has to be FULL PERMS) in to the Particle Script Generator's content (inventory) or look for "Voice Commands" in this manual
+
+3.b. Motion Properties
+~~~~~~~~~~~~~~~~~
+Motion deals with how particles move, speed, direction, and where they are born and rotation. Please note that some value changes (like rotation) can be seen only under specific conditions - specific emitter type, and emitting angles.
+
+Buttons:
+
+Speed:
+Particles speed is how fast they go after they are born, faster speed ussually means they can travel farther before they die. Speed is measured in meteers per second, so if particle's speed is 0.5 it will cover half meter in one second.
+Particles speed will be a random between the minimum and the maximum speed you set. 
+min - will take minimum speed up and down
+max - will take maximum speed up and down
+
+Push:
+You can push particles to force them to go in a specific direction, for example if you want them to fall you will push them down on the Z axis, please note that push direction remains the same even if the particles emitting prim is rotated.
+X, Y, Z - up arrows will push the particles to positive on the relevant axis, down arrows to negative
+Reset - will reset the push to 0 (default)
+
+Rotation:
+Rotation represents the rotation of the system not a lone particle. With this value you can actually make the particle system spin without moving the containing prim. Note that you can only see this effect if the emitter type set to Angle or Angle cone and the angles are lower than MAX.
+X, Y, Z - will set spin speed of the system accordingly on each axis
+Reset - will set the spin speed to 0 (default)
+
+Radius:
+This value lets you change the starting point of the emition. The more you add the farther from the center the emition happens.
+up & down - makes the emition radius bigger or smaller
+Reset - resets the radius to 0 (default)
+
+3.c. Quantity
+~~~~~~~~~~
+Quantity deals with how many particles there are at any given time.
+
+Buttons:
+
+Rate:
+How often particles bursts are emitted
+up & down - takes rate up and down
+Reset - resets the rate to default (highest)
+
+Burst:
+burst deals with how many particles are emitted on every burst
+up & down - more or less particles each burst
+
+Life:
+how long particles live before they go to a better world
+up & down - more and less life to particles
+
+3.d. System Properties
+~~~~~~~~~~~~~~~~~
+System props deals with values and conditions that are relevant to the whole system, not a specific particle, Follow Source, Follow Velocity, Z Bounce and Wind can all be turned on or off, active buttons will be marked green.
+
+Follow Source - if you turn this option on the particles will "stick" to the emitter even when it moves (move the Particle Script Generator with this setting on and off to see the difference)
+
+Follow Velocity - if this option is on, the particles will emit from the center on a very specific angle, to fully understand that effect try making particles X size very different from the Y size (so they are not round) and turn it on
+
+Z Bounce - when this is on particles will bounce up when they reach the emitter's Z axis
+
+Wind - this option will make the particles be affected by the wind(push) in the world, ussually useful for smoke and such
+
+System Life:
+System life is good if you want to make a limited by time particles effect (like explosion, or fire works) and not a continous effect. Limited System Life will emit for a set amount of time and than stop. You can press one of the tuning buttons (fine, medium or rough) to see it emitting again.
+
+up & down - will take system life up and down
+Reset - will reset system life to default (infinite)
+*Voice command is especially uselful in this case, you can set with it the exact amount of time you want the system to live, see chapter 4. Voice Commands for more info
+
+3.e. Emitter Type
+~~~~~~~~~~~~~
+Emitter type defines in what kind of pattern your particles come to world. There can be only one emitter type selected at a time, the active one will be marked green, inner and outer angles are appliable only to Angle and Angle Cone types.
+
+Explosion - the simplest type, send particles in all directions
+
+Angle - send particles only in two dimensions between begin and end angle. If angles are MAX it's a full circle of emition, if MIN it's a thin line.
+
+Angle Cone - sends particles to all directions bewteen the begin and end angle. If the angles are MAX (default) looks like explosion (sphere emition), if the are MIN it's a thin line.
+
+inner & outer angles:
+If the emitter type set to Angle or Angle Cone, the particles will be emitted on between the begin and the end angle.
+up & down - will take angles up and down accordingly
+MAX - sets both angles to maximum (In Angle Cone mode looks like the Explosion type, in Angle mode looks like a circle)
+MIN - set both angles to minimum - makes a thin line
+
+3.f. Controls
+~~~~~~~~~~
+Controls do what they are supposed to, control. Tuning roughness - fine, medium and coarse - means by how much values change when u click a certain arrow, fine - small change, coarse - big change. The selected roughness will be marked green.
+
+3.g. Script Type
+~~~~~~~~~~~~
+
+There are 7 types of scripts you can generate with this new version of the Particle Script Generator, but many more types can be achieved if you combine the basic ones:
+
+Plain - the regular and the default option, generate that script copy/paste and you have a particle script (stand alone script type)
+
+Primitizer - this option will generate a Primitizer friendly preset, you should save it to a notecard, and when you want to recall the preset drop the notecard on the Particle Script Generator (stand alone script type)
+
+llParticleSys - this option will generate only the llParticleSystem() function (for advanced users) and will NOT compile as is (Works only as a part of another script)
+
+Listen on/off - this option will generate a script which will turn on and off on owner's voice commnds. You can change the voice commands for on and off, and the channel with these commands:
+
+Listen color - this option will generate a script which colors can be changed on owner's voice command:
+/35 listen channel number - the word will stand for the channel on which the script will listen
+to change colors say 'color <num> <num> <num>' on a specified channel nums are R G B values between 0 - 255
+(You can combine this option with Listen on/off type, touch type and Everyone)
+
+Touch - this option will generate a script which will turn on and off when touched
+(You can combine this option with Listen on/off type, Listen Color type and Everyone)
+
+Poofer - This type will generate what is called in SL slang a Poofer script with the effect you made, what it means is this:
+Your effect will turn on when you teleport to a new place (a subject to new LSL limitations), run for a set amount of time (System Life property) and turn off. You will be able to run it again by voice command (listen on command will work act as a turn on command).
+Please note that whenever you switch the script type to Poofer, the System Life value will automatically change to 1 if it's zero. It is made so to prevent generate poofers from running endlessly. If you reset or try to manually set the System Life property to 0 when Poofer script type is on, the Particle Script Generator will reset it to 1, you can set values between lower than one, as long as they are not less or equal to 0.
+To set the trigger voice command that will start off the Poofer use the '/35 listen on word' command as described in previous paragraph.
+
+Everyone - This type will make your script react (if it is a reacting script - Listen on/off, Listen Color, Touch or Poofer) to any avtar's voice command/touch, not only the owner - this is useful for making demo effects.
+If you have Listen and Touch script types turned on together and you are switching the Everyone option on, it will effect the listener AND the touch.
+
+* You can have any combination of Listen on/off, Listen color, Touch and Everyone
+* Everyone will also work with Poofer. It wont work with Plain Script, Preset and llParticleSys as it is an irrelevant option to those types
+
+3.h. Finalization
+~~~~~~~~~~~~~
+
+Help - will give you this manual notecard
+
+Reset All - resets all the values to default
+
+Generate! - will generate the script and give it to you in chat
+
+Saving and compiling the script:
+Copy what the Particle Script Generator (it's easier to do that with chat history window on - CTRL+H) and paste that in to a script file, and save, tada you're fixed.
+
+* There are two types of scripts which willl not compile in an empty script file - Preset, must be saved in a notecard, and llParticleSys will give you only partial script (for advnced users) which will include only the llParticleSystem() function.
+
+4. Voice Commands
+============
+
+Some info cant be put in through buttons, thats why I implemented the voice commands. The Particle Script Generator listens on channel 35, so all commands should start with '/35' - After the v1.1 update all numeric values can be entered with voice commands for quicker access, the commands are as follows:
+
+Channel:
+/35 channel <channel> change the default channel 35 to another channel. Useful if your conflicting on another channel or wish to use more then one copy of the Particle Script Generator.
+
+Preset:
+/35 preset <preset> load an preset from Primitizer particle system reader.
+The following are included default 60's, Bubbles,Candle,Circle,Dizzy,Fall,Fire,Fountain,Jet,Jet2,Money,Psycho,Space,StarGate,Strange,Summer,Tunnel
+
+Texture:
+/35 texture <key> - key is the key (UUID) of the texture you want to use. To obtain that key, find the texture you want to use in your inventory, right click it, and choose 'Copy Asset UUID', and than ctrl+v,m it'll get you the desired key
+
+Target:
+/35 target <key> - key is the key (UUID) of the targeted object
+/35 target self - make the emitting object target itself
+/35 target owner - make the emitting object target it's owner
+
+Size:
+/35 ssize X Y - will change the Start size of the particle, X - width, Y - heigth, range 0.0 - 4.0
+/35 esize X Y - will change the End size of the particle, X - width, Y - heigth range 0.0 - 4.0
+
+Color:
+/35 srgb R G B - will change the Start rgb, R G B stand for red green blue numbers, values should be between 0 and 255
+/35 ergb R G B - will change the End rgb, R G B stand for red green blue numbers, values should be between 0 and 255
+
+Alpha:
+/35 salpha value - will change the Start alpha of the particles, value stands for a number - range 0.0 - 1.0
+/35 ealpha value - will change the End alpha of the particles, value stands for a number -  range 0.0 - 1.0
+
+Radius:
+/35 radius X - will change the initial radius at which particles are born, X stand for a value, minimum 0.0
+
+Speed:
+/35 speed MinValue MaxValue - will change the minimal and the maximal speed at which particles travel, MinValue stands for minimal speed, and MaxValue for maximal, minimal values 0.1
+
+Push:
+/35 push axis value - will push particles on a certain axis (may be more than one), axis stands for X Y or Z, value stands for the push value. Command will look like this: '/35 push y 1.7' 
+
+Rotation:
+/35 rotation axis value - will rotate the emitter on a certain angle (may be more than one, this effect is visible only in angle or angle_cone emitter types). Axis stands for X Y or Z, value stands for the rotation value. Command will look like this: '/35 rotation x 2.1' 
+
+Rate:
+/35 rate value - will set how often particle bursts are emitted in seconds, minimal value(maximal rate) is 0.01
+
+Burst:
+/35 burst value - sets how many particles are emitted per burst, minimal value is 1
+
+Life:
+/35 life value - sets how long particle lives, in seconds, after it is emitted. Minimal value 0.1 - Please note that life is NOT the same as System Life.
+
+Inner & Outer angles for Angle type emitters:
+/35 bangle value - sets the begin angle value, minimal value 0.0 (Angles are entered in degrees - and not radians - for your convinience)
+/35 eangle value - sets the end angle value, minimal value 0.0
+
+System Life:
+/35 syslife value - system life set how long the emitter will produce particle after initiation. Value stands for number in seconds - minimum 0.0 - will set system life to infinite
+
+6. Problems
+=======
+6.a. FAQs
+~~~~~~~
+
+* Q: How do I create an empty script?
+    A: From your inventory's menu pick Create > New Script, this will create a script file named New Script in your Scripts folder.
+        Go there, locate the file, double click it, and delete everything inside. Save will save the file.
+        You are set :D you can paste the Particle Script Generator generated script in to this and save.
+        
+* Q: Why does llParticleSys script type wont compile?
+    A: It's not supposed to compile as a stand alone script, it always must be a part of another script.
+
+
+6.b. Troubleshooting
+~~~~~~~~~~~~~~~~
+
+* The system runs for a few seconds after I push a button and than turns off
+    Check you System Life value, if it's HIGHER than 0 it means your system lives that amount of time before it dies away. Reset System Life to fix that
+
+* The script compiled correctly but it wont work - a few options here really
+    a. There is a little check box at the bottom left corner of the script window - it's called "Running", make sure it is checked, if it's not, the script won't run.
+    b. A problem I have sometimes, is that the script is perfectly fine, and it should be working totally well, but it's not. It is Something I call "Bad Prim" problem, to fix it take the script to your inventory, delete the prim from world, and put the script in a new prim, that should fix it. This problem happens because of database problems, when the server doesnt recognize the prim, so you simply put it in to another one
+
+
+
+
+Thank you for using Skidz Partz Particle Script Generator!  If you have any problems questions or requests, please let me know! :D
+
+Skidz Partz Location:
